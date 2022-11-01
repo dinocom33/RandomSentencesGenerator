@@ -11,7 +11,7 @@ adverbs = ["diligently", "highly", "noisily", "equally", "hungrily", "safely", "
 details = ["near the hospital", "near the airport", "at work", "at home", "in the mountains", "at the seaside",
            "in the air"]
 
-print("hello, welcome to the Random Sentences generator. Have fun!")
+print("hello, welcome to the Random Sentences generator. Have fun! To exit press any key+enter\n")
 
 
 def get_random_word(words):
@@ -27,4 +27,9 @@ while True:
     random_details = get_random_word(details)
 
     print(f"{random_name} from {random_place} {random_adverb} {random_verb} {random_noun} {random_details}")
-    input("Click [Enter] to generate a new random word")
+    text = input("Press [Enter] to generate a new random sentence")
+    if text == "":
+        continue
+    else:
+        quit()
+
